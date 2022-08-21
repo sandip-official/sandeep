@@ -42,10 +42,29 @@
         <div class="copyright py-4 text-center text-white">
             <div class="container"><small>Copyright &copy; 2021 Bishworaj Poudel</small></div>
         </div>
+        <div id="dairy">
+            <form action="">
+               
+                <button style="margin-left: 500px;" onclick="myfunction()"> Dairy calculator</button>
+            </form>
+            
+        </div>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+        <script>
+            function myfunction(){
+            var a = Number(prompt("Enter lacto"));
+            var b = Number(prompt("Enter 2nd fat"));
+            var snf =(( a + b + 2)/4)*3.6;
+            var lactoval = b*6.9;
+            var ts=(((( a + b + 2)/4)+6)*0.27)
+            var total= snf+lactoval+ts;
+
+            alert("the total amount is " +total);
+            }
+        </script>
     </body>
 </html>
