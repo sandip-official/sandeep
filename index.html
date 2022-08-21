@@ -42,10 +42,10 @@
         <div class="copyright py-4 text-center text-white">
             <div class="container"><small>Copyright &copy; 2021 sandeep adhikari </small></div>
         </div>
-        <div id="dairy">
+        <div id="dairy" style="height:250px;>
             <form action="">
                
-                <button style="margin-left:250px;" onclick="myfunction()"> Dairy calculator</button>
+                <button style="margin-left:150px;" onclick="myfunction()"> Dairy calculator</button>
             </form>
             
         </div>
@@ -60,7 +60,7 @@
             var b = Number(prompt("Enter Fat"));
             var snf =(( a + b + 2)/4)*3.6;
             var lactoval = b*6.9;
-            var ts=(((( a + b + 2)/4)+6)*0.27)
+            var ts=(((( a + b + 2)/4)+ b)*0.27)
             var total= snf+lactoval+ts;
 
             alert("the total amount is " +total);
